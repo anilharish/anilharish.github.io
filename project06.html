@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ANIL HARISH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ANIL HARISH</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="lib/docs/Anil_Harish.pdf">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+    <!-- +++++ Projects Section +++++ -->
+
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <h2>Kinematics - Paint Car Door</h2>
+                <hr>
+                <p>
+                    <strong>Date:</strong> Fall 2016 |
+                    <strong>Category:</strong> <a href="http://www.engr.colostate.edu/ECE481A2/course_info.shtml"> ECE 455 </a> |
+                    <strong>Affiliation:</strong> <a href="https://www.colostate.edu/">Colorado State University</a>
+                </p>
+                <p> <strong><a href="https://github.com/anilharish/Robotics/tree/master/Kinematics_CarDoor">Link to GitHub Repository</a></strong></p>
+                <p>
+                    MATLAB Script to generate the joint angles required to move a planar, n-link robot so the robot's hand follows a specified trajectory. Simulate articulated motion.
+                </p>
+            </div>
+            <div class="col-lg-12 centered">
+                <h3>Dependencies:</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-4 col-lg-offset-3">
+                    <img class="img-responsive" width="100" height="100" src="img/dep/c++.png" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive" width="300" height="100" src="img/dep/ros.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Media</h3>
+                <hr>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ePgh3ZYoAY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Project Details</h3>
+                <hr>
+                <p>
+                    This was my final project for <a href="https://www.engr.colostate.edu/~aam/">Prof. Anthony A. Maciejewski</a>'s class <a href="http://www.engr.colostate.edu/ECE481A2/course_info.shtml">
+                        ECE 455 - Introduction to Robot Programming
+                        and Simulation
+                    </a>. We were provided a file that contains the robot joint variable positions and velocities at key frames. From this file we had to generate the values of the joint variables of an n-joint manipulator for each frame.
+                    We used <a href="https://en.wikipedia.org/wiki/Centripetal_Catmull%E2%80%93Rom_spline">Catmull-Rom spline interpolation</a> to generate smooth joint trajectories between each key frame, keeping in mind to step along the curves using
+                    appropriate u-values to generate the joint positions for each of the total frames to be displayed.
+
+                </p>
+                <p>
+                    Once we were satisfied by the smooth motion, we had to generate the joint angles required to move a planar, n-link robot so the robot's hand follows a specified trajectory. Generating the joint angles required us to calculate Jacobians
+                    and perform both forward and inverse kinematics. Asubset of the Denavit-Hartenberg parameters for the robot arm in its initial configuration was provided. Using forward kinematics and the initial robot conguration described by arm,
+                    determine the location of the end effector at t = 0 using forward kinematics. We compared the actual end-effector location to the desired location as specified in trajectory to generate a position error.
+                </p>
+                <p>
+                    The next task was to reduce the position error by determining the joint angles required to reach the desired position, i.e, perform inverse kinematics. We used the Damped Least Squares (DLS) technique which is iterative. Within the DLS
+                    loop, we first needed to form the Jacobian of the end-eector for the current robot configuration. Using the Jacobian and given value of lambda, we performed DLS to calculate the change in joint angles,  which are added to the initial
+                    angle values. We determine the robot's end-effector position using the updated angle values and repeated the angle update until the position error is satisfactorily small or you are unable to get any closer to the specified point (i.e.
+                    the desired trajectory may not be within the robot's reachable workspace).
+                </p>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_fig1.jpg" alt=""></p>
+                    <p>Figure 1. Block diagram illustrating the relationship between individual degrees of freedom for the DH parameters</p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Articulated Objects</h3>
+                <p>
+                    Given the above specification of coordinate frames, the relationship between adjacent coordinate frames is given by a rotation of theta, followed by translations of d and a, and a final rotation of alpha. By concatenating these
+                    transformations, it can be shown [17] that the relationship between adjacent coordinate frames i-I and i denoted by Aj-I,i is given by the homogeneous transformation as follow:
+                </p>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat1.jpg" alt=""></p>
+                    <p>where</p>
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat2.jpg" alt=""></p>
+                    <p>
+                        with sand c denoting the sine and cosine functions, respectively. In this derivation of the homogeneous transformation, the independent variable is 0 for rotary joints and d for prismatic joints. By multiplying adjacent link
+                        transformations, the homogeneous transformation between any two coordinate systems i and j is computed by using:
+                    </p>
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat3.jpg" alt=""></p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Jacobians</h3>
+                <p>
+                    Essential to this concept of resolved motion rate control is the Jacobian. The Jacobian matrix J relates the motion of a reference coordinate frame attached to the articulated object to the joint variable velocities through the equation
+                </p>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat4.jpg" alt=""></p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <p>
+                    where x is typically a six-dimensional vector describing the desired translational and rotational motion of a point on the object (e.g. motion of a hand) and iJ is an n-dimensioal vector representing the joint velocities, n being the
+                    number of degrees of freedom in the articulated object. While a number of techniques for calculating the Jacobian have been studied, a particularly elegant and efficient method is available if the desired motion, X, is described in
+                    terms of the screw axis variables W and J.L .When described in terms of these variables, it can be shown that the Jacobian is given by
+                </p>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat5.jpg" alt=""></p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <p>
+                    The objective of defining a smooth linear transformation between the two sets of variables, the functional set ofjoint variables describing the degrees offreedom in the object and the convenient task-oriented set of variables which
+                    the user specifies, is thus achieved by the Jacobian. In this manner SAM avoids the cumbersome nonlinear relationship between position specification of the two sets of variables. It is clear from above equation that the desired motion
+                    specified by the user, X, can be achieved by applying the joint velocities specified by
+                </p>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat6.jpg" alt=""></p>
+                </div>
+            </div>
+            <div class="col-lg-12 centered">
+                <p>
+                    if J is square and nonsingular. For the vast majority of cases, however, the number of degrees of freedom will not match the dimension of the specified velocity. 
+                    Then we find the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse">pseudoinverse</a> of the non-square matrix.
+                </p>
+            </div>
+        </div>
+  </div>
+
+    <!-- /container -->
+    <!-- /Additional Projects Section -->
+
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-lg-6 col-lg-offset-3 centered">
+                <h4>EXPLORE OTHER PROJECTS</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row mt centered">
+            <div class="col-lg-4">
+                <a href="project01.html"><img class="img-responsive" src="img/portfolio/port01.gif" alt="" /></a>
+                <p>Task Level Controller for 6-Axis Robots</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="project02.html"><img class="img-responsive" src="img/portfolio/port02.gif" alt="" /></a>
+                <p>Ant Colony Optimization and Formation Control of Swarm Robots</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="project03.html"><img class="img-responsive" src="img/portfolio/port03.gif" alt="" /></a>
+                <p>Rapidly Exploring Random Tree Mapping with Multimap Merge</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- +++++ Footer Section +++++ -->
+
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>My Recharging Station</h4>
+                        <p>
+                            1400 W Elizabeth St, Apt 208,<br />Fort Collins, CO - 80521<br /> United States of America.
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <h4>My Online Presense</h4>
+                        <p>
+                            <a href="https://linkedin.com/in/anilharish/">LinkedIn</a><br />
+                            <a href="https://github.com/anilharish">GitHub</a><br />
+                            <a href="https://twitter.com/anilh92">Twitter</a><br />
+                            <a href="https://www.facebook.com/MY.TIME.IS.N0W">Facebook</a>
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <h4>More About Me</h4>
+                        <p>
+                            <a>Mobile: +1 (970) 825-2230</a><br />
+                            <a>Email:  anil.harish@outlook.com</a>
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="copyrights">
+            <div class="container">
+                <p>
+                    &copy; Copyrights <strong>Anil Harish</strong>. All Rights Reserved
+                </p>
+                <div class="credits">
+                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jeykll</a>
+                </div>
+            </div>
+        </div>
+        <!-- / copyrights -->
+        <!-- JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/php-mail-form/validate.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+
+        <!-- Template Main Javascript File -->
+        <script src="js/main.js"></script>
+
+</body>
+</html>

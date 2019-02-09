@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ANIL HARISH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ANIL HARISH</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="lib/docs/Anil_Harish.pdf">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+    <!-- +++++ Projects Section +++++ -->
+
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <h2>Task Level Controller for 6-Axis Robots</h2>
+                <hr>
+                <p>
+                    <strong>Date:</strong> Fall 2017 |
+                    <strong>Category:</strong> <a href="https://www.engr.colostate.edu/~dga/mech564/general_info.html"> MECH 564 </a> |
+                    <strong>Affiliation:</strong> <a href="https://www.colostate.edu/">Colorado State University</a>
+                </p>
+                <p> <strong><a href="https://github.com/anilharish/Robotics/tree/master/Task_Level_Controller_6_Axis_Robots">Link to GitHub Repository</a></strong></p>
+                <p>
+                    Evaluate the task level robot control method for PUMA 560 robot arm by computer simulations.
+                </p>
+            </div>
+            <div class="col-lg-12 centered">
+                <h3>Dependencies:</h3>
+            </div>
+
+
+            <div class="row mt centered">
+                <div class="col-lg-2 col-lg-offset-2 centered">
+                    <img class="img-responsive" width="100" height="100" src="img/dep/c++.png" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img class="img-responsive" width="300" height="100" src="img/dep/ros.png" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img class="img-responsive" width="400" height="100" src="img/dep/matlab.png" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img class="img-responsive" width="100" height="100" src="img/dep/simulink.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-lg-12 centered">
+                <h3>Overview</h3>
+                <hr>
+                <p>
+                    The aim of this project was to develop a non-linear controller and decouple the robot dynamics model in the task space. This was my final project for <a href="https://www.engr.colostate.edu/me/dr-jianguo-zhao/">Dr. Jianguo Zhao</a>'s
+                    class <a href="https://www.engr.colostate.edu/~dga/mech564/index.html"> MECH 564 - Fundamentals of Robot Mechanics and Control</a>. It involved modelling and simulating a task level controller for PUMA 560 6-axis robot in SIMULINK. The code was
+                    developed in MATLAB based on the DH parameters as shown in Table 1. below. Few important details of the robot are:
+                    <ul>
+                        <li>6 Axis arm with 3 axis making up a spherical wrist</li>
+                        <li>Maximum reach 878mm from center axis to center of wrist</li>
+                        <li>Software selectable payloads from 4 kg to 2.5 kg</li>
+                        <li>Arm wright: 83 kg (approximate)</li>
+                        <li>Repeatability ±0.1mm</li>
+                        <li>2.5 kg max velocity: 500mm/sec straight line moves</li>
+                        <li>4.0 kg max velocity: 470mm/sec straight line moves</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_fig1.jpg" alt=""></p>
+                    <p>Figure 1. PUMA 560 Robot</p>
+                    <p>The link paramaters of the PUMA 560 robot are as follows:</p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_tab1.jpg" alt=""></p>
+                    <p>Table 1. DH Parameters of PUMA 560 Robot</p>
+                </div>
+            </div>
+            <div class="col-lg-12 centered">
+                <h3>Dynamics Model of the Robot</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_dat1.jpg" alt=""></p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_dat2.jpg" alt=""></p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_dat3.jpg" alt=""></p>
+
+                </div>
+            </div>
+            <div class="col-lg-12 centered">
+                <h3>The Task Level Control Method</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>
+                        <img class="img-responsive" src="img/portfolio/project01/proj1_dat4.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <h3>Required Tasks</h3>
+                <h4>Design of the Task level controller</h4>
+                <p>
+                    <ol>
+                        <li>Derive the nonlinear controller to linearize and decouple the robot dynamics model in the task space</li>
+                        <li>Write the linearized robot dynamics model in the state space form</li>
+                    </ol>
+                    <h4>The Simulation</h4>
+                    <br>
+                    <ol>
+                        <li>
+                            Develop a software to simulate the robot dynamics model, i.e. numerically solve <br />
+                            <img class="img-responsive" src="img/portfolio/project01/proj1_dat5.jpg" alt="">
+                        </li>
+                        <br>
+                        <li>
+                            Numerically implement the non leniar controller <br />
+                            <img class="img-responsive" src="img/portfolio/project01/proj1_dat6.jpg" alt="">
+                        </li>
+                        <br>
+                        <li>
+                            Apply the linear controller in order to track a given desired trajectory as follows <br />
+                            <img class="img-responsive" src="img/portfolio/project01/proj1_dat7.jpg" alt="">
+                        </li>
+                        <br>
+                        <li>
+                            The parameters in the robot dynamics model dkj ; cijk and gi vary 2%, 5%, 10% or 30% from their nominal values. Please repeat the simulation in 3. Note : you should not change these parameters in the nonlinear controller.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <h3>Selected Resuts</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_res1.jpg" alt=""></p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_res2.jpg" alt=""></p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_res3.jpg" alt=""></p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_res4.jpg" alt=""></p>
+                    <p><img class="img-responsive" src="img/portfolio/project01/proj1_res5.jpg" alt=""></p>
+                </div>
+            </div>
+        </div>
+  </div>
+
+
+
+    <!-- /container -->
+    <!-- /Additional Projects Section -->
+
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-lg-6 col-lg-offset-3 centered">
+                <h4>EXPLORE OTHER PROJECTS</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row mt centered">
+            <div class="col-lg-4">
+                <a href="project04.html"><img class="img-responsive" src="img/portfolio/port04.gif" alt="" /></a>
+                <p>Revolutionizing Farming with Swarm Robotics</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="project02.html"><img class="img-responsive" src="img/portfolio/port02.gif" alt="" /></a>
+                <p>Any Colony Optimization and Formation control of Swarm Robots</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="project03.html"><img class="img-responsive" src="img/portfolio/port03.gif" alt="" /></a>
+                <p>Rapidly Exploring Random Tree Mapping with Multimap Merge</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- +++++ Footer Section +++++ -->
+
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>My Recharging Station</h4>
+                        <p>
+                            1400 W Elizabeth St, Apt 208,<br />Fort Collins, CO - 80521<br /> United States of America.
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <h4>My Online Presense</h4>
+                        <p>
+                            <a href="https://linkedin.com/in/anilharish/">LinkedIn</a><br />
+                            <a href="https://github.com/anilharish">GitHub</a><br />
+                            <a href="https://twitter.com/anilh92">Twitter</a><br />
+                            <a href="https://www.facebook.com/MY.TIME.IS.N0W">Facebook</a>
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <h4>More About Me</h4>
+                        <p>
+                            <a>Mobile: +1 (970) 825-2230</a><br />
+                            <a>Email:  anil.harish@outlook.com</a>
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="copyrights">
+            <div class="container">
+                <p>
+                    &copy; Copyrights <strong>Anil Harish</strong>. All Rights Reserved
+                </p>
+                <div class="credits">
+                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jeykll</a>
+                </div>
+            </div>
+        </div>
+        <!-- / copyrights -->
+        <!-- JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/php-mail-form/validate.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+
+        <!-- Template Main Javascript File -->
+        <script src="js/main.js"></script>
+
+</body>
+</html>

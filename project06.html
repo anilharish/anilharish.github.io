@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ANIL HARISH</title>
+    <title>ANIL HARISH - Kinematics: Paint Car Door</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -71,6 +71,7 @@
             </div>
             <div class="col-lg-12 centered">
                 <h3>Dependencies:</h3>
+                <br>
             </div>
             <div class="row mt centered">
                 <div class="col-lg-4 col-lg-offset-3">
@@ -109,13 +110,13 @@
                 </p>
                 <p>
                     Once we were satisfied by the smooth motion, we had to generate the joint angles required to move a planar, n-link robot so the robot's hand follows a specified trajectory. Generating the joint angles required us to calculate Jacobians
-                    and perform both forward and inverse kinematics. Asubset of the Denavit-Hartenberg parameters for the robot arm in its initial configuration was provided. Using forward kinematics and the initial robot conguration described by arm,
+                    and perform both forward and inverse kinematics. A subset of the Denavit-Hartenberg parameters for the robot arm in its initial configuration was provided. Using forward kinematics and the initial robot configuration described by arm,
                     determine the location of the end effector at t = 0 using forward kinematics. We compared the actual end-effector location to the desired location as specified in trajectory to generate a position error.
                 </p>
                 <p>
                     The next task was to reduce the position error by determining the joint angles required to reach the desired position, i.e, perform inverse kinematics. We used the Damped Least Squares (DLS) technique which is iterative. Within the DLS
-                    loop, we first needed to form the Jacobian of the end-eector for the current robot configuration. Using the Jacobian and given value of lambda, we performed DLS to calculate the change in joint angles,  which are added to the initial
-                    angle values. We determine the robot's end-effector position using the updated angle values and repeated the angle update until the position error is satisfactorily small or you are unable to get any closer to the specified point (i.e.
+                    loop, we first needed to form the Jacobian of the end-effector for the current robot configuration. Using the Jacobian and given value of lambda;, we performed DLS to calculate the change in joint angles, which are added to the initial
+                    angle values. We determine the robot's end-effector position using the updated angle values and repeat the angle update until the position error is satisfactorily small, or we are unable to get any closer to the specified point (i.e.
                     the desired trajectory may not be within the robot's reachable workspace).
                 </p>
             </div>
@@ -130,7 +131,7 @@
                 <h3>Articulated Objects</h3>
                 <p>
                     Given the above specification of coordinate frames, the relationship between adjacent coordinate frames is given by a rotation of theta, followed by translations of d and a, and a final rotation of alpha. By concatenating these
-                    transformations, it can be shown [17] that the relationship between adjacent coordinate frames i-I and i denoted by Aj-I,i is given by the homogeneous transformation as follow:
+                    transformations, it can be shown [17] that the relationship between adjacent coordinate frames i-I and i denoted by Aj-I,i is given by the homogeneous transformation as follows:
                 </p>
             </div>
             <div class="row mt centered">
@@ -153,40 +154,40 @@
                 </p>
             </div>
             <div class="row mt centered">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-4">
                     <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat4.jpg" alt=""></p>
                 </div>
             </div>
 
             <div class="col-lg-12 centered">
                 <p>
-                    where x is typically a six-dimensional vector describing the desired translational and rotational motion of a point on the object (e.g. motion of a hand) and iJ is an n-dimensioal vector representing the joint velocities, n being the
+                    where x is typically a six-dimensional vector describing the desired translational and rotational motion of a point on the object (e.g. motion of a hand) and iJ is an n-dimensional vector representing the joint velocities, n being the
                     number of degrees of freedom in the articulated object. While a number of techniques for calculating the Jacobian have been studied, a particularly elegant and efficient method is available if the desired motion, X, is described in
                     terms of the screw axis variables W and J.L .When described in terms of these variables, it can be shown that the Jacobian is given by
                 </p>
             </div>
             <div class="row mt centered">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-4">
                     <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat5.jpg" alt=""></p>
                 </div>
             </div>
 
             <div class="col-lg-12 centered">
                 <p>
-                    The objective of defining a smooth linear transformation between the two sets of variables, the functional set ofjoint variables describing the degrees offreedom in the object and the convenient task-oriented set of variables which
+                    The objective of defining a smooth linear transformation between the two sets of variables, the functional set of joint variables describing the degrees of freedom in the object and the convenient task-oriented set of variables which
                     the user specifies, is thus achieved by the Jacobian. In this manner SAM avoids the cumbersome nonlinear relationship between position specification of the two sets of variables. It is clear from above equation that the desired motion
                     specified by the user, X, can be achieved by applying the joint velocities specified by
                 </p>
             </div>
             <div class="row mt centered">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-4">
                     <p><img class="img-responsive" src="img/portfolio/project06/proj6_dat6.jpg" alt=""></p>
                 </div>
             </div>
             <div class="col-lg-12 centered">
                 <p>
-                    if J is square and nonsingular. For the vast majority of cases, however, the number of degrees of freedom will not match the dimension of the specified velocity. 
-                    Then we find the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse">pseudoinverse</a> of the non-square matrix.
+                    if J is square and non-singular. For the vast majority of cases, however, the number of degrees of freedom will not match the dimension of the specified velocity. 
+                    Then, we find the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse">pseudoinverse</a> of the non-square matrix.
                 </p>
             </div>
         </div>
@@ -232,7 +233,7 @@
                     <!-- /col-lg-4 -->
 
                     <div class="col-lg-4">
-                        <h4>My Online Presense</h4>
+                        <h4>My Online Presence</h4>
                         <p>
                             <a href="https://linkedin.com/in/anilharish/">LinkedIn</a><br />
                             <a href="https://github.com/anilharish">GitHub</a><br />
@@ -260,7 +261,7 @@
                     &copy; Copyrights <strong>Anil Harish</strong>. All Rights Reserved
                 </p>
                 <div class="credits">
-                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jeykll</a>
+                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jekyll</a>
                 </div>
             </div>
         </div>

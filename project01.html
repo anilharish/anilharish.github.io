@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ANIL HARISH</title>
+    <title>ANIL HARISH - Task Level Controller for 6-Axis Robots</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -71,6 +71,7 @@
             </div>
             <div class="col-lg-12 centered">
                 <h3>Dependencies:</h3>
+                <br>
             </div>
 
 
@@ -97,7 +98,7 @@
                     The aim of this project was to develop a non-linear controller and decouple the robot dynamics model in the task space. This was my final project for <a href="https://www.engr.colostate.edu/me/dr-jianguo-zhao/">Dr. Jianguo Zhao</a>'s
                     class <a href="https://www.engr.colostate.edu/~dga/mech564/index.html"> MECH 564 - Fundamentals of Robot Mechanics and Control</a>. It involved modelling and simulating a task level controller for PUMA 560 6-axis robot in SIMULINK. The code was
                     developed in MATLAB based on the DH parameters as shown in Table 1. below. Few important details of the robot are:
-                    <ul>
+                    <ul class="centered">
                         <li>6 Axis arm with 3 axis making up a spherical wrist</li>
                         <li>Maximum reach 878mm from center axis to center of wrist</li>
                         <li>Software selectable payloads from 4 kg to 2.5 kg</li>
@@ -112,7 +113,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <p><img class="img-responsive" src="img/portfolio/project01/proj1_fig1.jpg" alt=""></p>
                     <p>Figure 1. PUMA 560 Robot</p>
-                    <p>The link paramaters of the PUMA 560 robot are as follows:</p>
+                    <p>The link parameters of the PUMA 560 robot are as follows:</p>
                     <p><img class="img-responsive" src="img/portfolio/project01/proj1_tab1.jpg" alt=""></p>
                     <p>Table 1. DH Parameters of PUMA 560 Robot</p>
                 </div>
@@ -142,20 +143,21 @@
                 <h3>Required Tasks</h3>
                 <h4>Design of the Task level controller</h4>
                 <p>
-                    <ol>
+                    <ol class="centered">
                         <li>Derive the nonlinear controller to linearize and decouple the robot dynamics model in the task space</li>
                         <li>Write the linearized robot dynamics model in the state space form</li>
+                        <br>
                     </ol>
                     <h4>The Simulation</h4>
                     <br>
-                    <ol>
+                    <ol class="centered">
                         <li>
                             Develop a software to simulate the robot dynamics model, i.e. numerically solve <br />
                             <img class="img-responsive" src="img/portfolio/project01/proj1_dat5.jpg" alt="">
                         </li>
                         <br>
                         <li>
-                            Numerically implement the non leniar controller <br />
+                            Numerically implement the non-linear controller <br />
                             <img class="img-responsive" src="img/portfolio/project01/proj1_dat6.jpg" alt="">
                         </li>
                         <br>
@@ -165,9 +167,10 @@
                         </li>
                         <br>
                         <li>
-                            The parameters in the robot dynamics model dkj ; cijk and gi vary 2%, 5%, 10% or 30% from their nominal values. Please repeat the simulation in 3. Note : you should not change these parameters in the nonlinear controller.
+                            The parameters in the robot dynamics model dkj ; cijk and gi vary 2%, 5%, 10% or 30% from their nominal values. Please repeat the simulation in 3.
                         </li>
                     </ol>
+                    <em><b>Note : You should not change these parameters in the nonlinear controller.</b></em>
                 </p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 centered">
@@ -227,7 +230,7 @@
                     <!-- /col-lg-4 -->
 
                     <div class="col-lg-4">
-                        <h4>My Online Presense</h4>
+                        <h4>My Online Presence</h4>
                         <p>
                             <a href="https://linkedin.com/in/anilharish/">LinkedIn</a><br />
                             <a href="https://github.com/anilharish">GitHub</a><br />
@@ -255,7 +258,7 @@
                     &copy; Copyrights <strong>Anil Harish</strong>. All Rights Reserved
                 </p>
                 <div class="credits">
-                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jeykll</a>
+                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jekyll</a>
                 </div>
             </div>
         </div>

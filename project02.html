@@ -217,7 +217,7 @@
 
             <div class="col-lg-12 centered">
                 <p>Figure 2. Our fabrication of the Omidirectional IR Transceiver Module</p>
-                <h3>Total Time required for sharing information for all swam robots</h3>
+                <h3>Total Time Required for Sharing Information for All Swarm Robots</h3>
                 <p>
                     Firstly, we are interested in the number of communication contacts n_c happens during the motion. This value is equal to the average number of robots in the area S_c, n_c=S_c D_sw, where D_sw is the swarm density. We assume that
                     the collision avoiding radius and the robot's rotation radius are small so that we can neglect the area of fractures.
@@ -231,7 +231,7 @@
                 </div>
             </div>
             <div class="col-lg-12 centered">
-                <p>Figure 3. (Left) Information transmission model (Right) Values Total time required for transmission ttotal in seconds for different values of N (number of robots)</p>
+                <p>Figure 3. (Left) Information transmission model (Right) Values Total time required for transmission total in seconds for different values of N (number of robots)</p>
                 <p>In this case S_c=2 R_c \upsilon t. D_sw can be calculated as the number of robots N in swarm divided by the area available for the whole swarm S_sw:</p>
             </div>
 
@@ -243,12 +243,12 @@
 
             <div class="col-lg-12 centered">
                 <p>
-                    From the above equation we can calculate the time till the first infection t_first and the total time t_total= n~t_first+Np_t for infecting the whole swarm as, Where:<br />
+                    From the above equation, we can calculate the time till the first infection t_first and the total time t_total= n~t_first+Np_t for infecting the whole swarm as, Where:<br />
                     nc = Number of Communication Contacts<br />
                     Dsw = Swarm Density<br />
                     Rc = Communication radius<br />
-                    v = robot motion velocity<br />
-                    T = time for motor ON<br />
+                    v = Robot motion velocity<br />
+                    T = Time for motor ON<br />
                     N= Number of robots<br />
                 </p>
             </div>
@@ -271,7 +271,7 @@
             </div>
 
             <div class="col-lg-12 centered">
-                <p>Figure 4 and 5. Ultasonic Range Finder to gather distance particles for SLAM</p>
+                <p>Figure 4 and 5. Ultrasonic Range Finder to gather distance particles for SLAM</p>
                 <h3>Message Routing</h3>
                 <p>
                     Each swarm robot maintains connections to several "neighbours" in the network, and these neighbouring connections are used for message passing. Suppose that swarm robot X receives a message from Optimus to Bumblebee through robot Y,
@@ -294,7 +294,7 @@
                     all broadcast the message to their neighbours. If Bumblebee exists in the network, this technique will eventually find him.
                 </p>
                 <p>
-                    Notice that throughout the search for Bumblebee, the message has been leaving a trail of clues about Optimus. If the message reaches Bumblebee, and then Bumblebee sends back a response, the response can follow these clues on a
+                    Notice that, throughout the search for Bumblebee, the message has been leaving a trail of clues about Optimus. If the message reaches Bumblebee, and then Bumblebee sends back a response, the response can follow these clues on a
                     rather direct path back to Optimus. As shown in figure 18, the response is routed to Optimus, it leaves a trail of clues that can be used to route future messages from Optimus back to Bumblebee. Other robots can make use of these
                     clues too. For example, if robot X sends a message to Bumblebee, the message will travel on a rather direct route using the existing clues.
                 </p>

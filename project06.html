@@ -114,8 +114,8 @@
                 </p>
                 <p>
                     The next task was to reduce the position error by determining the joint angles required to reach the desired position, i.e, perform inverse kinematics. We used the Damped Least Squares (DLS) technique which is iterative. Within the DLS
-                    loop, we first needed to form the Jacobian of the end-effector for the current robot configuration. Using the Jacobian and given value of lambda, we performed DLS to calculate the change in joint angles,  which are added to the initial
-                    angle values. We determine the robot's end-effector position using the updated angle values and repeated the angle update until the position error is satisfactorily small, or you are unable to get any closer to the specified point (i.e.
+                    loop, we first needed to form the Jacobian of the end-effector for the current robot configuration. Using the Jacobian and given value of lambda;, we performed DLS to calculate the change in joint angles, which are added to the initial
+                    angle values. We determine the robot's end-effector position using the updated angle values and repeat the angle update until the position error is satisfactorily small, or we are unable to get any closer to the specified point (i.e.
                     the desired trajectory may not be within the robot's reachable workspace).
                 </p>
             </div>
@@ -130,7 +130,7 @@
                 <h3>Articulated Objects</h3>
                 <p>
                     Given the above specification of coordinate frames, the relationship between adjacent coordinate frames is given by a rotation of theta, followed by translations of d and a, and a final rotation of alpha. By concatenating these
-                    transformations, it can be shown [17] that the relationship between adjacent coordinate frames i-I and i denoted by Aj-I,i is given by the homogeneous transformation as follow:
+                    transformations, it can be shown [17] that the relationship between adjacent coordinate frames i-I and i denoted by Aj-I,i is given by the homogeneous transformation as follows:
                 </p>
             </div>
             <div class="row mt centered">
@@ -186,7 +186,7 @@
             <div class="col-lg-12 centered">
                 <p>
                     if J is square and non-singular. For the vast majority of cases, however, the number of degrees of freedom will not match the dimension of the specified velocity. 
-                    Then we find the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse">pseudoinverse</a> of the non-square matrix.
+                    Then, we find the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse">pseudoinverse</a> of the non-square matrix.
                 </p>
             </div>
         </div>

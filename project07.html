@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ANIL HARISH - Offline Programming of Industrial Robots</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ANIL HARISH</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="lib/docs/Anil_Harish.pdf">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+    <!-- +++++ Projects Section +++++ -->
+
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-lg-12 centered">
+                <h2>Offline Programming of Industrial Robots – Cell Modelling, Kinematics, Arc Welding Simulation, Collision Detection and Path Planning</h2>
+                <hr>
+                <p>
+                    <strong>Date:</strong> February 2019 |
+                    <strong>Category:</strong> <a href="https://github.com/anilharish/RobotExpert_Tecnomatix"> Personal Projects </a> |
+                    <strong>Affiliation:</strong> <a href="https://www.colostate.edu/">Colorado State University</a>
+                </p>
+                <p> <strong><a href="https://github.com/anilharish/RobotExpert_Tecnomatix">Link to GitHub Repository</a></strong></p>
+                <p>
+                    Model an industrial 6-axis robot (Yasakawa Motoman) cell using CAD files. Develop kinematics for grouped prototype components and simulate arc welding cell. Test  and correct collision detection and add new welding paths
+                    with continuous process generator. Develop offline program  production factory floor robot cell deployment.
+                </p>
+            </div>
+            <div class="col-lg-12 centered">
+                <h3>Dependencies:</h3>
+                <br>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-2 col-lg-offset-2 centered">
+                    <img class="img-responsive" width="200" height="100" src="img/dep/solidworks.png" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img class="img-responsive" width="200" height="100" src="img/dep/siemens.png" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img class="img-responsive" width="200" height="100" src="img/dep/tecnomatix.png" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img class="img-responsive" width="200" height="100" src="img/dep/eiffel.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Basic RobotExpert Simulation</h3>
+                <hr>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1vFUk5khnQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Overview</h3>
+                <hr>
+                <p>
+                    Offline programming is a process of creating an independent robot program to replicate an actual industrial robot cell. The offline programming and 3D graphical robotics simulator help to create the optimal program paths for the robots to perform a
+                    specific task. Robot paths, reachability analysis, collision and near-miss detection, and cycle time reporting can be included when simulating the robot program.
+
+                </p>
+                <p>
+                    These programs can then be uploaded to the real industrial robot for execution. Previously, a teach pendent was used to program the robots on-line and manually. However, this method of offline programming does not interfere with production as the program for the
+                    robot is created outside the production process. It can be uploaded or updated during the downtime of the robots. Basic simulation of a production industrial robot cell is avilable in the previous topic above.
+                </p>
+                <p>
+                    For this project I have used the RobotExpert software available at : <a href="https://www.plm.automation.siemens.com/store/en-us/robotexpert/">Siemens Product Lifecycle Management - Tecnomatix</a>. More details about the product can be
+                    found at <a href="https://www.plm.automation.siemens.com/global/en/products/tecnomatix/">Siemens: Tecnomatix</a>.
+                </p>
+                <p><b><em>NOTE: All files required to run the OLP/simulation with specific RobotExpert cell is provided in the GitHub link above. Make sure you specify the extracted library path in File> Options> Library in the PLM software.</em></b></p>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Step 1: Import individual CAD files of layout elements</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project07/resources_tools.jpg" alt=""></p>
+                    <p>Figure 1. CAD files are individually imported and converted into RobotExpert software specific files with .cojt extension</p>
+
+                    <p><img class="img-responsive" src="img/portfolio/project07/disassembled_cell.jpg" alt=""></p>
+                    <p>Figure 2. Relocated and manipulated layout elements for better view of basic cell</p>
+
+                    <p><img class="img-responsive" src="img/portfolio/project07/robot_CAD_model.jpg" alt=""></p>
+                    <p>Figure 3. Robot CAD model will be imported with reference frames and links</p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Step2: Group CAD files and develop layout element frames and kinematics</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5JO-VvX6Y84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Step 3: Relocate using placement manipulator and proposed cell layout. Attach Dependencies</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><img class="img-responsive" src="img/portfolio/project07/first_assembly.jpg" alt=""></p>
+                    <p>Figure 4. First Assembly of basic cell - Mounting Robot on the pedestal, bare metal on the welding pad, and relocating fences</p>
+                    <p><img class="img-responsive" src="img/portfolio/project07/closed_assembly.jpg" alt=""></p>
+                    <p>Figure 5. You can take it a step further and and create an enclosed cell for OLP simulation</p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Step 4: Arc Welding - Path Planning and Collision Testing</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tjg-V19rrxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p><img class="img-responsive" src="img/portfolio/project07/setup_closeup.jpg" alt=""></p>
+                    <p>Figure 6. Parallel perspective view of the Arc Welding Cell</p>                
+                </div>
+                <div class="col-lg-8 col-lg-offset-3">
+                    <p><img class="img-responsive" src="img/portfolio/project07/robot_parallel_perspective.jpg" alt=""></p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>Figure 7. Arc Welding Setup</p>
+                </div>
+            </div>
+
+            
+
+            <div class="col-lg-12 centered">
+                <h3>Step 5: Create New Path to Avoid Collision by Adding New Via Point</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dkqNn-8rzwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>Step 6: Create New Arc Welding Path</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AtpCijqaSH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-12 centered">
+                <h3>New Arc Welding Simulation Tested with No Collisions</h3>
+            </div>
+            <div class="row mt centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7vfGcmdetg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+  </div>
+
+    <!-- /container -->
+    <!-- /Additional Projects Section -->
+
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-lg-6 col-lg-offset-3 centered">
+                <h4>EXPLORE OTHER PROJECTS</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row mt centered">
+            <div class="col-lg-4">
+                <a href="project01.html"><img class="img-responsive" src="img/portfolio/port01.gif" alt="" /></a>
+                <p>Task Level Controller for 6-Axis Robots</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="project02.html"><img class="img-responsive" src="img/portfolio/port02.gif" alt="" /></a>
+                <p>Ant Colony Optimization and Formation Control of Swarm Robots</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="project03.html"><img class="img-responsive" src="img/portfolio/port03.gif" alt="" /></a>
+                <p>Rapidly Exploring Random Tree Mapping with Multimap Merge</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- +++++ Footer Section +++++ -->
+
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>My Recharging Station</h4>
+                        <p>
+                            1400 W Elizabeth St, Apt 208,<br />Fort Collins, CO - 80521<br /> United States of America.
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <h4>My Online Presence</h4>
+                        <p>
+                            <a href="https://linkedin.com/in/anilharish/">LinkedIn</a><br />
+                            <a href="https://github.com/anilharish">GitHub</a><br />
+                            <a href="https://twitter.com/anilh92">Twitter</a><br />
+                            <a href="https://www.facebook.com/MY.TIME.IS.N0W">Facebook</a>
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <h4>More About Me</h4>
+                        <p>
+                            <a>Mobile: +1 (970) 825-2230</a><br />
+                            <a>Email:  anil.harish@outlook.com</a>
+                        </p>
+                    </div>
+                    <!-- /col-lg-4 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="copyrights">
+            <div class="container">
+                <p>
+                    &copy; Copyrights <strong>Anil Harish</strong>. All Rights Reserved
+                </p>
+                <div class="credits">
+                    Hosted on GitHub Pages with <a href="http://jekyllrb.com">Jekyll</a>
+                </div>
+            </div>
+        </div>
+        <!-- / copyrights -->
+        <!-- JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/php-mail-form/validate.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+
+        <!-- Template Main Javascript File -->
+        <script src="js/main.js"></script>
+
+</body>
+</html>
